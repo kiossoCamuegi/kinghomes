@@ -8,6 +8,7 @@ import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 import {MdOutlineBusiness,MdOutlineRemoveRedEye,MdOutlineLocationOn} from "react-icons/md";
 import Skeleton from '@mui/material/Skeleton';
+import GetImages from './GetImages';
 var getYouTubeID = require('get-youtube-id');
 
   
@@ -30,7 +31,7 @@ function DetailsArea() {
            if(typeof  response.data.files === "object"){
             const Data = [];
             response.data.files.map((item, index)=>{
-                Data.push({original:Hoot()+"images/"+item.name,  thumbnail:Hoot()+"images/"+item.name});
+                Data.push({original:GetImages(item.name) ,  thumbnail:GetImages(item.name)});
             });
            setImages(Data); 
            setText(response.data.content.description);

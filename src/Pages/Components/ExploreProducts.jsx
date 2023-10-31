@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Hoot from './Hoot';
 import { Circles } from 'react-loader-spinner';
+import GetImages from './GetImages';
 
 function ExploreProducts() {
     
@@ -51,7 +52,7 @@ function ExploreProducts() {
                 location:item.content.location,
                 visitors:item.content.visitors,
                 code:item.content._id,
-                image:item.files.length >= 1 ? Hoot()+"images/"+item.files[0].name : "https://inforpress.cv/wp-content/uploads/2020/05/empty.jpg"
+                image:item.files.length >= 1 ? GetImages(item.files[0].name) : "https://inforpress.cv/wp-content/uploads/2020/05/empty.jpg"
               });
             }
         });

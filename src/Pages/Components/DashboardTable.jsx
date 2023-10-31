@@ -18,6 +18,7 @@ import ImageUploading from 'react-images-uploading';
 import {BsImage} from "react-icons/bs"   
 import parse from 'html-react-parser';
 import { Circles } from 'react-loader-spinner';
+import GetImages from './GetImages';
 
 
 
@@ -295,7 +296,7 @@ const GetData = async(ID)=>{
                         {Files.map((item, index)=>{
                             return(
                               <div className="image-box mt-4" key={index+1}>
-                                <ImageLazyLoading source={Hoot()+"images/"+item.name} height={100} />
+                                <ImageLazyLoading source={GetImages(item.name)} height={100} />
                                  <div className="bg-dark btn col mt-2" onClick={()=>DeleteImage(item._id, index)} >Delete image</div>
                               </div>
                             )
