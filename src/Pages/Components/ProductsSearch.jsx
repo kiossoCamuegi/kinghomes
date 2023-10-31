@@ -41,7 +41,7 @@ const LoadData = async()=>{
     const rows  = [];
     let response = await axios.get(Hoot()+"homes");  
     response.data.map((item,index)=>{
-        if(index <= 5){
+         
           rows.push({
             title:item.content.title,
             price:item.content.price,
@@ -51,7 +51,7 @@ const LoadData = async()=>{
             code:item.content._id,
             image:item.files.length >= 1 ? GetImages(item.files[0].name) : "https://inforpress.cv/wp-content/uploads/2020/05/empty.jpg"
           });
-        }
+    
     });
 
  
@@ -71,7 +71,7 @@ const LoadData = async()=>{
     }
     setData(FilterData(rows)); 
   } else{
-    setData(rows); 
+    setData(rows);  
   }
   setLoaded(true);  
   } catch (error) {
