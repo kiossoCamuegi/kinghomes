@@ -113,7 +113,7 @@ useEffect(()=>{
               <div className="pr-section col">
                   {Load === true ?
                     <>
-                     <span className="total">{Data.length} items encomtrados na lista </span>   
+                     <span className="total">{Data.length} items founded on list </span>   
                      <PaginatedItems Data={Data} itemsPerPage={9} /> 
                     </>
                   :
