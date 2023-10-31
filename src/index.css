@@ -1407,6 +1407,8 @@ body .fd-contact-page .contact-header  li svg{
    font-size:25px;
 }
 
+
+
 body .fd-contact-page .content{
   display: flex;
   width:100%;
@@ -1858,6 +1860,121 @@ body .image-box .btn{
    color:#fdfdfd;
 }
 
+
+/*About **/
+
+
+body .fd-about-page{
+  width:100%;
+  position: relative;
+  background:#F5F7F8; 
+  min-height:100vh;
+}
+
+body .fd-about-page .about-header {
+    position: relative;
+    width:100%;
+    height:350px;
+    background-color:#000;
+    background-image: linear-gradient(to right bottom, #000000, #131313,
+     #1f1f1f, #2c2c2c, #393939);
+     position: relative;
+}
+
+body .fd-about-page .about-header .over-box{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.5);
+  padding-bottom:20px;
+}
+
+body .fd-about-page .about-header img{
+  width:100%;
+  height:100%;
+  max-height:350px;
+  object-fit: cover;
+}
+
+body .fd-about-page .about-header  .block-text{
+ padding-left:20px;
+}
+
+
+body .fd-about-page .about-header  .block-text h2{
+  font-size:30px;
+  margin:0px;
+  margin-bottom:10px;
+}
+
+
+body .fd-about-page .about-header  .block-text p{
+   font-weight:500 !important;
+   max-width:740px;
+}
+
+body .fd-about-page .about-header .block-text{
+    padding-top:120px;
+    color: #F5F7F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;  
+}
+
+
+body .fd-about-page .about-block{
+    width:100%;
+    padding:60px 20px;
+}
+
+body .fd-about-page .about-block.main{
+   background: #692828;
+   color: #F5F7F8;
+}
+
+body .fd-about-page .about-block .content{
+  display: flex;
+  align-items: center;
+}
+
+
+body .fd-about-page .about-block .content.left{
+    flex-direction: row-reverse;
+}
+
+body .fd-about-page .about-block .content.left .text{
+  padding-left:40px;
+}
+
+
+body .fd-about-page .about-block .content.right .text{
+   padding-right:40px;
+}
+
+
+body .fd-about-page .about-block .content .image img{
+    max-width:600px;
+    border-radius:10px;
+    object-fit: cover;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+}
+
+
+body .fd-about-page .about-block .content h3{
+  font-family: 'Dancing Script', cursive !important;
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+
+body .fd-about-page .about-block .content p{
+    font-weight:500 !important;
+}
+
+
 /** Responsive  ***/
 
 @media screen and (max-width:900px){
@@ -2287,6 +2404,29 @@ tr { border: 1px solid #ccc; }
 
  tr button{
     margin:10px 0px !important;
+ }
+
+
+ body .fd-about-page .about-block .content{
+  flex-direction: column !important;
+ }
+
+ body .fd-about-page .about-block .content .text{
+  padding:0px !important;
+  margin-bottom:40px;
+ }
+
+ body .fd-about-page .about-block .content img{
+    max-width:100%;
+    width:100%;
+    border-radius:0px;
+ }
+
+ body .fd-about-page .about-header,
+ body .fd-about-page .about-header img{
+  max-height:100% !important;
+  height:100% !important;
+  min-height:400px;
  }
  
  

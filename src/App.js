@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from 'react'; 
 import { Circles } from 'react-loader-spinner';
+import About from './Pages/About';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/property_details/:ID" element={<DetailsPage />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
+          <Route path="/about" element={<About/>} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
