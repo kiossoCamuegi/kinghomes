@@ -26,14 +26,14 @@ function About() {
                   <AboutText    
                    bg="main" 
                    text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus explicabo, atque totam ducimus suscipit nemo velit ipsam aut sed. Quos, quibusdam officia nihil assumenda vel excepturi ipsum quam officiis iste odio libero dolorum repellendus, nemo similique saepe fugit  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus explicabo, atque totam ducimus suscipit nemo velit ipsam aut sed." 
-                   title="The Mission and impact we bring" 
+                   title="Changing the  real estate industry" 
                    image="https://stories.site/woodenstreetfurniture/interior-design-ideas-of-2022/assets/1.jpeg" 
                    pos="left"
                  />
                   <AboutText    
                    bg="silver" 
                    text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus explicabo, atque totam ducimus suscipit nemo velit ipsam aut sed. Quos, quibusdam officia nihil assumenda vel excepturi ipsum quam officiis iste odio libero dolorum repellendus, nemo similique saepe fugit  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus explicabo, atque totam ducimus suscipit nemo velit ipsam aut sed." 
-                   title="The Mission and impact we bring" 
+                   title="Bringing more money to our customers" 
                    image="https://www.artshub.com.au/wp-content/uploads/sites/2/2021/11/2023-image-for-article.jpg?w=1000" 
                    pos="right"
                  />
