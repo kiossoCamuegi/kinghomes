@@ -162,7 +162,7 @@ function Items({currentItems}){
     return (
       <>
         <Items currentItems={currentItems} />
-        {currentItems.length >= 10 ? <ReactPaginate breakLabel="..." renderOnZeroPageCount={null} /> : <></>};
+       <ReactPaginate breakLabel="..." renderOnZeroPageCount={null} />  
       </>
     );
   }
