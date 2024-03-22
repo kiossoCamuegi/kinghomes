@@ -211,7 +211,8 @@ body .loading-area{
   width:100%;
   height:100vh;
   background-color: #000;
-  position: relative; 
+  position: relative;
+  overflow: hidden; 
  }
 
  body .fd-header  .image-area{
@@ -759,6 +760,7 @@ body .fd-testimonials .card-test .user-data img{
     object-fit: cover;
     background: #9A3B3B;
     border:3px solid #9A3B3B;
+    overflow: hidden;
 }
 
 body .fd-testimonials .card-test .dets .block{
@@ -2014,19 +2016,22 @@ body .fd-about-page .about-block .content p{
 
   body .fd-navbar .responsive-menu  li a{
     font-weight:700 !important;
-    color:#131313;
+    color:#ffff !important;
   }
 
   body .fd-navbar .responsive-menu  button{
       padding:10px 15px !important;
       border-radius:30px !important;
       min-width:300px !important;
-      margin-bottom:20px;
+      margin-bottom:20px; 
   } 
 
-  body .responsive-menu  button.btn-border{
-      border-color: #131313;
-      color:#131313 !important;
+  body .responsive-menu a button.btn-border{
+      border-color: #ffff !important;
+      color:#ffff !important;
+  }
+  body .fd-navbar .responsive-menu  button {
+    color:#131313 !important;
   }
 
   body .fd-navbar .responsive-menu  button.btn-border:hover{
@@ -2039,7 +2044,7 @@ body .fd-about-page .about-block .content p{
   }
 
   body .fd-navbar .responsive-menu  .toggle-menu svg{
-    color: #1f1f1f;
+    color: #ffff;
   }
 
   body .fd-navbar .responsive-menu .toggle-menu:hover,

@@ -1,6 +1,6 @@
 
 function GetImages(e) {
-  return `https://drive.google.com/uc?id=${e}&export=download`;
+  return `https://lh3.googleusercontent.com/d/${e}=w1000?authuser=0`; 
 }
 
 export default GetImages

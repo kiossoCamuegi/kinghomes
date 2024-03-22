@@ -11,6 +11,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from 'react'; 
 import { Circles } from 'react-loader-spinner';
 import About from './Pages/About';
+import PropertiesMap from './Pages/PropertiesMap';
+import LearnAboutPosts from './Pages/LearnAboutPosts';
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/properties_map" element={<PropertiesMap />} />
+          <Route path="/post_something" element={<LearnAboutPosts />} />
         </Routes>
       </Router>
       </div>

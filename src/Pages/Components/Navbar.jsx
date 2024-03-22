@@ -60,8 +60,9 @@ function Navbar({active, fixed}){
             <div className="fd-menu">
                 <li className={active === 1 ? 'active' : ""}><Link to="/">Home</Link> </li>
                 <li className={active === 2 ? 'active' : ""}><Link to="/about">About Us</Link> </li>
+                <li className={active === 5 ? 'active' : ""}><Link to="/post_propertie">Post something</Link> </li> 
                 <li className={active === 3 ? 'active' : ""}><Link to="/properties">Properties</Link> </li> 
-                <li className={active === 4 ? 'active' : ""}><Link to="/contacts">Contacts</Link> </li> 
+                <li className={active === 4 ? 'active' : ""}><Link to="/contacts">Contacts</Link> </li>  
                 <> {Load === true ? <>
                   {Data !== null ?  <> <Link to="/dashboard"><Avatar src={Data} sx={{width:50,height:50}} /></Link></> : 
                   <>
@@ -76,8 +77,9 @@ function Navbar({active, fixed}){
                 <ul>
                 <li className={active === 1 ? 'active' : ""}><Link to="/">Home</Link> </li>
                 <li className={active === 2 ? 'active' : ""}><Link to="/about">About Us</Link> </li>
+                <li className={active === 5 ? 'active' : ""}><Link to="/post_propertie">Post something</Link> </li> 
                 <li className={active === 3 ? 'active' : ""}><Link to="/properties">Properties</Link> </li> 
-                <li className={active === 4 ? 'active' : ""}><Link to="/contacts">Contacts</Link> </li>
+                <li className={active === 4 ? 'active' : ""}><Link to="/contacts">Contacts</Link> </li>  
                 <> {Load === true ? <>
                     {Data !== null ?  <> <Link to="/dashboard"><Avatar src={Data} sx={{width:50,height:50}} /></Link></> : 
                     <>

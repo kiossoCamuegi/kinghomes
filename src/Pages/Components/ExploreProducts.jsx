@@ -70,12 +70,16 @@ function ExploreProducts() {
  
   return (
     <div className='fd-explore'>
+       
          <div className="watermark right">
            <h1>Explore</h1>
         </div>
         <div className="wrapper">
           <div className="text-block-area space">
-                 <div> <h2>Explore our best list <br />5 stars Home!</h2></div>
+                 <div> 
+                    <h2>Explore our best list <br />5 stars Home!</h2>
+                    <img src="https://drive.usercontent.google.com/download?id=12HPkymSHvsYRsLOzmfmy-ueP_hiFSdDD&authuser=0" alt="" />
+                 </div>
                  <p>Lorem ipsum dolor sit,
                  amet consectetur adipisicing elit. Iure beatae nisi error a eos ad ipsum voluptas deserunt pariatur dolore!</p>
           </div>

@@ -162,7 +162,13 @@ function Items({currentItems}){
     return (
       <>
         <Items currentItems={currentItems} />
-       <ReactPaginate breakLabel="..." renderOnZeroPageCount={null} />  
+       <ReactPaginate 
+       nextLabel=">"
+       onPageChange={handlePageClick} 
+       pageCount={pageCount}
+       previousLabel="<"
+       breakLabel="..." 
+       renderOnZeroPageCount={null} />  
       </>
     );
   }

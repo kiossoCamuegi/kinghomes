@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className='fd-header'>
         <div className="image-area">
-            <ImageLazyLoading source="https://ik.imagekit.io/9gf6vyngo/v1/wp-content/uploads/2023/04/interior-design-living-room.jpg"  height={800} />
+            <ImageLazyLoading source="https://ik.imagekit.io/9gf6vyngo/v1/wp-content/uploads/2023/04/interior-design-living-room.jpg"  height={1300} />
         </div>
       <div className="header-content">
        <div className="wrapper">

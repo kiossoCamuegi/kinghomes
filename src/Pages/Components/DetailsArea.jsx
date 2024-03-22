@@ -13,7 +13,6 @@ var getYouTubeID = require('get-youtube-id');
 
   
 function DetailsArea() {
-
    const {ID}= useParams()
    const [Data, setData] = useState({});
    const [Text, setText] = useState("");

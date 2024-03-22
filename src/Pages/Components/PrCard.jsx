@@ -13,7 +13,7 @@ function PrCard({data,length}) {
         <div className="image">
           <ImageLazyLoading source={data.image} height={280} />
           <div className="location">
-              <CiLocationOn/> {data.location}
+              <CiLocationOn/> <ReduceTextLength text={data.location} length={length} />  
           </div>
         </div>
        <Link to={"/property_details/"+data.code} ><h4 className="title"><ReduceTextLength text={data.title} length={length} /></h4></Link>
