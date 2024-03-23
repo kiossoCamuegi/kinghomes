@@ -56,13 +56,13 @@ function Signin() {
                     </div>
                   <div className="form-box">
                   <div className="form-area">
-                      <h1>Signin</h1>
-                      <p>Everything You Need to Know About Buying a Haunted House, Haunted houses are labeled</p>
+                      <h1>Login</h1>
+                      <p>Tudo o que você precisa saber sobre a compra de uma casa mal-assombrada, as casas mal-assombradas estão rotuladas</p>
                       <div className="buttons">
-                      <button  onClick={GoogleAuth} className="btn-account btn"><div className="icon"><FcGoogle/></div><div className='text'><span>signin with Google</span></div></button> 
-                      <Link to="/"><button className="back-button btn text-light"><BsArrowLeft/> Go back to home</button></Link>
+                      <button  onClick={GoogleAuth} className="btn-account btn"><div className="icon"><FcGoogle/></div><div className='text'><span>Continuar com conta Google </span></div></button> 
+                      <Link to="/"><button className="back-button btn text-light"><BsArrowLeft/> Voltar a pagina inicial</button></Link>
                       </div>
-                      <div className="d-flex mt-2">Don't have an account ?<Link to="/signup">Signup</Link></div>
+                      <div className="d-flex mt-2">Não tem uma conta  ? <Link to="/signup"> Cadastre-se</Link></div>
                   </div>  
                   </div>
               </div>

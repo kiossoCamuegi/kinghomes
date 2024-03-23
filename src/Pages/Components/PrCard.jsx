@@ -25,12 +25,12 @@ function PrCard({data,length}) {
             <div className="st selected"><AiFillStar/></div>
             <div className="st selected"><AiFillStar/></div>
             <div className="st"><AiFillStar/></div>  
-            <span>({data.visitors} visitors)</span>  
+            <span>({data.visitors} Visitantes)</span>  
         </div>
         <div className="price">$ {data.price}</div>
         </div>
         <Link to={"/property_details/"+data.code}>
-            <button className="btn text-light">Check now</button>    
+            <button className="btn text-light">Ver Agora</button>    
         </Link>
        </div>
     </div>

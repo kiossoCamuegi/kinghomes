@@ -21,21 +21,21 @@ const Search = (e)=>{
     <div className='search-form'>
         <Form onSubmit={Search} >
             <div className="block">
-                <Form.Label><div className="ed-flex"><BsCursorText/> <span>Keywords</span></div></Form.Label>
+                <Form.Label><div className="ed-flex"><BsCursorText/> <span>Palavras chaves</span></div></Form.Label>
                 <Form.Control placeholder='...' required onChange={(e)=>setText(e.target.value)} />
             </div>
             <div className="block">
-                <Form.Label><div className="ed-flex"><CiLocationOn/> <span>Location</span></div></Form.Label>
+                <Form.Label><div className="ed-flex"><CiLocationOn/> <span>Localizações</span></div></Form.Label>
                 <Form.Control placeholder='...' required onChange={(e)=>setLocation(e.target.value)}  />
             </div>
             <div className="block">
-                <Form.Label><div className="ed-flex"><BiSelection/> <span>Type</span></div></Form.Label>
+                <Form.Label><div className="ed-flex"><BiSelection/> <span>Tipo</span></div></Form.Label>
                 <Form.Select  onChange={(e)=>setType(e.target.value)} >
-                     <option value="0">For sale</option>
-                     <option value="1">For rent</option>
+                     <option value="0">Para comprar</option>
+                     <option value="1">Para arrendar</option>
                 </Form.Select>
             </div>
-            <button className="btn text-light">Search</button>
+            <button className="btn text-light">Pesquisar</button>
         </Form>
     </div>
   )

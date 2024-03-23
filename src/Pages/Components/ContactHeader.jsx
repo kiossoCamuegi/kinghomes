@@ -14,8 +14,8 @@ function ContactHeader() {
        <div className="wrapper">
             <div className="block-text">
                <div>
-                  <h2>Contact Us</h2>
-                  <p>Looking for new ideias to find or sale some spot ?</p>
+                  <h2>Fale conosco</h2>
+                  <p>Procurando como expandir o seu negocio ou produto ?</p>
                </div>
                <ul className='d-flex'>
                    <li><Link to="#"><AiFillLinkedin/></Link> </li>

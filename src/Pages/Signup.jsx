@@ -56,13 +56,13 @@ const CheckUserStatus = async()=>{
                            </div>
                           <div className="form-box">
                           <div className="form-area">
-                              <h1>Signup</h1>
-                              <p>Don’t miss out on the right home for you — browse up-to-date listings, refine your search and more.</p>
+                              <h1>Cadastrar</h1>
+                              <p>Não perca a oportunidade de vender bem e rapidamente o seu imóvel, anuncie aqui o seu produto.</p>
                               <div className="buttons">
-                              <button className="btn-account btn" onClick={GoogleAuth} ><div className="icon"><FcGoogle/></div><div className='text'><span>signup with Google</span></div></button>
-                              <Link to="/"><button className="back-button btn text-light"><BsArrowLeft/> Go back to home</button></Link>
+                              <button className="btn-account btn" onClick={GoogleAuth} ><div className="icon"><FcGoogle/></div><div className='text'><span>Continuar com conta Google</span></div></button>
+                              <Link to="/"><button className="back-button btn text-light"><BsArrowLeft/> Voltar para pagina inicial</button></Link>
                               </div>
-                             <div className="d-flex mt-2">Already have an account ?<Link  to="/signin">Signin</Link></div>
+                             <div className="d-flex mt-2">Já tem uma conta ?<Link  to="/signin">Login</Link></div>
                           </div>  
                           </div>
                      </div>

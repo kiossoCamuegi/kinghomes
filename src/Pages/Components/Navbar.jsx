@@ -58,16 +58,16 @@ function Navbar({active, fixed}){
               </Link>
              </div>
             <div className="fd-menu">
-                <li className={active === 1 ? 'active' : ""}><Link to="/">Home</Link> </li>
-                <li className={active === 2 ? 'active' : ""}><Link to="/about">About Us</Link> </li>
-                <li className={active === 5 ? 'active' : ""}><Link to="/post_propertie">Post something</Link> </li> 
-                <li className={active === 3 ? 'active' : ""}><Link to="/properties">Properties</Link> </li> 
-                <li className={active === 4 ? 'active' : ""}><Link to="/contacts">Contacts</Link> </li>  
+                <li className={active === 1 ? 'active' : ""}><Link to="/">Início</Link> </li>
+                <li className={active === 2 ? 'active' : ""}><Link to="/about">Sobre nos</Link> </li>
+                <li className={active === 5 ? 'active' : ""}><Link to="/post_something">Anunciar</Link> </li> 
+                <li className={active === 3 ? 'active' : ""}><Link to="/properties">Comprar & Alugar</Link> </li> 
+                <li className={active === 4 ? 'active' : ""}><Link to="/contacts">Contatos</Link> </li>  
                 <> {Load === true ? <>
                   {Data !== null ?  <> <Link to="/dashboard"><Avatar src={Data} sx={{width:50,height:50}} /></Link></> : 
                   <>
-                    <Link to="/signin"><button className="btn btn-border text-light">Signin</button></Link>
-                  <Link to="/signup"><button className="btn bg-white text-dark">Signup</button></Link>
+                    <Link to="/signin"><button className="btn btn-border text-light">Login</button></Link>
+                  <Link to="/signup"><button className="btn bg-white text-dark">Cadastrar</button></Link>
                   </>} </> : <></>}
                 </> 
             </div>
@@ -75,18 +75,18 @@ function Navbar({active, fixed}){
             <div className={Toggle === true ? "responsive-menu show" : "responsive-menu"}>
             <div className="toggle-menu" onClick={()=>setToggle(Toggle === true ? false : true)}><AiOutlineClose/> </div>
                 <ul>
-                <li className={active === 1 ? 'active' : ""}><Link to="/">Home</Link> </li>
-                <li className={active === 2 ? 'active' : ""}><Link to="/about">About Us</Link> </li>
-                <li className={active === 5 ? 'active' : ""}><Link to="/post_propertie">Post something</Link> </li> 
-                <li className={active === 3 ? 'active' : ""}><Link to="/properties">Properties</Link> </li> 
-                <li className={active === 4 ? 'active' : ""}><Link to="/contacts">Contacts</Link> </li>  
+                <li className={active === 1 ? 'active' : ""}><Link to="/">Início</Link> </li>
+                <li className={active === 2 ? 'active' : ""}><Link to="/about">Sobre nos</Link> </li>
+                <li className={active === 5 ? 'active' : ""}><Link to="/post_something">Anunciar</Link> </li> 
+                <li className={active === 3 ? 'active' : ""}><Link to="/properties">Comprar & Alugar</Link> </li> 
+                <li className={active === 4 ? 'active' : ""}><Link to="/contacts">Contatos</Link> </li>  
                 <> {Load === true ? <>
-                    {Data !== null ?  <> <Link to="/dashboard"><Avatar src={Data} sx={{width:50,height:50}} /></Link></> : 
-                    <>
-                      <Link to="/signin"><button className="btn btn-border text-light">Signin</button></Link>
-                    <Link to="/signup"><button className="btn bg-white text-dark">Signup</button></Link>
-                    </>} </> : <></>}
-                  </>
+                  {Data !== null ?  <> <Link to="/dashboard"><Avatar src={Data} sx={{width:50,height:50}} /></Link></> : 
+                  <>
+                    <Link to="/signin"><button className="btn btn-border text-light">Login</button></Link>
+                  <Link to="/signup"><button className="btn bg-white text-dark">Cadastrar</button></Link>
+                  </>} </> : <></>}
+                </> 
                 </ul>
             </div>
           </div>

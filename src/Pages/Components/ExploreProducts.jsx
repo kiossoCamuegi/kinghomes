@@ -77,11 +77,10 @@ function ExploreProducts() {
         <div className="wrapper">
           <div className="text-block-area space">
                  <div> 
-                    <h2>Explore our best list <br />5 stars Home!</h2>
+                    <h2>Explore os melhores <br />Imoveis !</h2>
                     <img src="https://drive.usercontent.google.com/download?id=12HPkymSHvsYRsLOzmfmy-ueP_hiFSdDD&authuser=0" alt="" />
                  </div>
-                 <p>Lorem ipsum dolor sit,
-                 amet consectetur adipisicing elit. Iure beatae nisi error a eos ad ipsum voluptas deserunt pariatur dolore!</p>
+                 <p>Quer comprar, vender ou alugar casa? No portal de Imobiliário temos milhares de apartamentos e moradias , aramazens, e qualquer tipo de imovel que pode imaginar.</p>
           </div>
           {Load === true ?
            <>
@@ -91,7 +90,7 @@ function ExploreProducts() {
             })}
            </div>
            <div className="center-box">
-              <Link to="/properties"><button className="btn text-dark btn-border mt-4">View more</button></Link>
+              <Link to="/properties"><button className="btn text-dark btn-border mt-4">Ver mais</button></Link>
            </div>
           </>
             :

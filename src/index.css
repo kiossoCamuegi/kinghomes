@@ -46,6 +46,40 @@ body button{
    align-items: center;
  }
 
+ body .home-box {
+  position: relative;
+ } 
+
+ body .home-box .sponsored{
+  position:absolute;
+  top:20px;
+  z-index:100;
+  right:20px;
+  padding:6px 15px;
+  background:#692828;
+  color:#ffffff;
+  font-size:18px;
+  border-radius:6px;
+}
+
+body .testimonials-carousel .sponsored{
+  display: none !important;
+}
+
+body .space{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+body .link-box{
+   padding:6px 15px;
+   background:#692828;
+   border-radius:30px;
+   color:#ffffff;
+   box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+}
+
 
 body .loader{
   display: flex;
@@ -985,7 +1019,12 @@ body .fd-products-page .total{
 } 
 
 
-body .fd-products-page  ul{
+body .fd-products-page  .pr-section{
+  padding-left:60px;
+}
+
+
+body .pagination  ul{
   display: flex;
   align-items: center;  
   flex-wrap: wrap;
@@ -1000,7 +1039,7 @@ body .fd-products-page  ul{
   margin-left:10px;
 }
 
-body .fd-products-page  ul li{
+body .pagination  ul li{
   padding:5px;
   margin-right:15px;
   width:34px;
@@ -1011,13 +1050,13 @@ body .fd-products-page  ul li{
   border-radius:100%;
 }
 
-body .fd-products-page .products-container{
+body .pagination .products-container{
   padding-left:20px;
 }
 
 
-body .fd-products-page  ul li.previous,
-body .fd-products-page  ul li.next{
+body .pagination  ul li.previous,
+body .pagination  ul li.next{
    width:34px;
    height:34px; 
    display: flex;
@@ -1030,22 +1069,27 @@ body .fd-products-page  ul li.next{
 }
 
 
-body .fd-products-page  ul li.selected{
+body .pagination  ul li.selected{
   background:#9A3B3B;
   color:#fff;
 
 }
 
-body .fd-products-page  ul li.next{
+body .pagination  ul li.next{
 margin-right:0px !important;
 }
 
-body .fd-products-page  ul li.previous a,
-body .fd-products-page  ul li.next a{
+body .pagination  ul li.previous a,
+body .pagination  ul li.next a{
 color:#fff;
 }
 
-
+body .center{
+  display: flex !important; 
+   justify-content: center !important;
+   align-items: center !important;
+   width:100%;
+}
 
 /*Property details ***/
 
@@ -2205,6 +2249,10 @@ body .fd-about-page .about-block .content p{
       padding:0px !important;
   }
 
+  body .home-box{
+    position: relative; 
+  }
+
   body .fd-visited .home-box .box{
     width:100% !important;
     min-width:100% !important;
@@ -2399,6 +2447,11 @@ table, thead, tbody, th, td, tr {
   display: block; 
 }
 
+
+
+
+
+
 /* Hide table headers (but not display: none;, for accessibility) */
  
 tr { border: 1px solid #ccc; }
@@ -2450,4 +2503,127 @@ tr { border: 1px solid #ccc; }
   body .authentication-area .over-data .content  button span{
        font-size:15px !important;
    }
+}
+
+body .pd-1{
+   padding:0px 10px;
+}
+
+
+body .adds-banner{
+  width:100%; 
+  margin:20px 0px;  
+}
+
+
+body .adds-banner img{
+    width:100%; 
+    height:100%;
+    max-height:300px;
+}
+
+body .map-page{
+    height:100vh;
+    width:100%;
+    background: #9c9c9c; 
+}
+
+body .map-filter-area{
+    width:100%;
+    padding:10px;
+    height:200px;
+    background:#ffff;
+    border-bottom:1px solid #e6e6e6;
+    padding-top:120px;
+}
+
+body .ml-2{
+  margin-left:20px;
+}
+
+body  .map-content{
+    display: flex;
+    width:100%;
+    background:#ffff;
+    height:calc(100vh - 200px);
+}
+
+body .map-filter-area input,
+body .map-filter-area select{
+  border: none;
+  background-color:#F5F7F8;
+  padding:15px 10px;
+  min-width:170px;
+}
+
+body  .map-content .products{
+   min-width:800px;
+   max-width:800px;
+   height:calc(100vh - 200px);
+   overflow-y: scroll;
+   max-height:calc(100vh - 200px);
+   background-color: #ffffff;
+   padding-bottom:20px;
+}
+
+body  .map-content .products .pr-card{
+  width:47%;
+  min-width:370px;
+}
+
+body .align-center{
+   align-items: center;
+}
+
+body  .map-content iframe{
+  width:100% !important;
+  height:100% !important;
+}
+
+body .gmap_canvas, 
+body .mapouter, 
+body .map-box{
+     width:100%;
+     height:100%;
+     background-color:#ffff;
+     overflow: hidden;
+     border-bottom:1px solid #DDE6ED;
+}
+
+
+body .map-page .products .total{
+  font-size:20px;
+  margin-left:30px; 
+  color:#9A3B3B; 
+} 
+
+
+body .map-page .wrapper{
+  max-width:100% !important;
+}
+
+body .icon-coin{
+    width:55px;
+    height:55px;
+    border-radius:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#692828;
+    min-width:55px !important;
+    margin-right:10px;
+}
+
+body .icon-coin svg{
+  width:35px;
+  height:35px;
+  color:#ffff;
+  margin:0px !important;
+}
+
+/**Learn more abour ads ***/
+
+body .advirtisement-page{
+  min-height:60vh;
+  background-color:#F5F7F8;
 }

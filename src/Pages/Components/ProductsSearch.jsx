@@ -7,10 +7,15 @@ import {BiSelection} from "react-icons/bi"
 import ReactPaginate from 'react-paginate';
 import axios from 'axios';
 import Hoot from './Hoot';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
 import { Circles } from 'react-loader-spinner';
 import GetImages from './GetImages';
+import AddsBanner from './AddsBanner';
+import { TbCoinPound } from "react-icons/tb";
+import { RiMapPin5Line } from "react-icons/ri";
+import { BiCoin } from "react-icons/bi";
+
 
 function ProductsSearch() {      
 const [Data, setData] =  useState([]);
@@ -27,6 +32,7 @@ navigate(`/properties?key=${Text}&loc=${Location}&type=${Type}`);
 }
 
 
+document.title =  "Comprar & Alugar";
 
 const LoadData = async()=>{
   try {
@@ -93,29 +99,54 @@ useEffect(()=>{
             <Form onSubmit={Search} >
             <h1>Aplicar Filtros</h1>
             <div className="block">
-                <Form.Label><div className="ed-flex"><BsCursorText/> <span>Keywords</span></div></Form.Label>
+                <Form.Label><div className="ed-flex"><BsCursorText/> <span>Palavras Chaves</span></div></Form.Label>
                 <Form.Control placeholder='...' required value={Text} onChange={(e)=>setText(e.target.value)} />
             </div>
             <div className="block">
-                <Form.Label><div className="ed-flex"><CiLocationOn/> <span>Location</span></div></Form.Label>
+                <Form.Label><div className="ed-flex"><CiLocationOn/> <span>Localização</span></div></Form.Label>
                 <Form.Control placeholder='...' value={Location} required onChange={(e)=>setLocation(e.target.value)}  />
             </div>
             <div className="block">
-                <Form.Label><div className="ed-flex"><BiSelection/> <span>Type</span></div></Form.Label>
+                <Form.Label><div className="ed-flex"><BiSelection/> <span>Tipo de negocio</span></div></Form.Label>
                 <Form.Select value={Type} onChange={(e)=>setType(e.target.value)} >
-                     <option value="0">For sale</option>
-                     <option value="1">For rent</option>
+                     <option value="0">Para comprar</option>
+                     <option value="1">Para vender</option>
                 </Form.Select>
             </div>
-            <button className="btn text-light">Search</button>  
+            <div className="block">
+                <Form.Label><div className="ed-flex"><BiCoin /> <span>Moeda</span></div></Form.Label>
+                <Form.Select value={Type} onChange={(e)=>setType(e.target.value)} >
+                     <option value="0">Kwanza (Kz)</option>
+                     <option value="1">Euro (€)</option>
+                     <option value="3">Dolar ($) </option> 
+                </Form.Select>
+            </div>
+            <div className="block">
+                <Form.Label><div className="ed-flex"><TbCoinPound /> <span>Preço</span></div></Form.Label>
+                <div className="d-flex">
+                   <Form.Control placeholder='MIN' type="number" required onChange={(e)=>setLocation(e.target.value)}  />
+                   <div className="pd-1"></div>
+                   <Form.Control placeholder='MAX' type="number" required onChange={(e)=>setLocation(e.target.value)}  />
+                </div>
+            </div>
+            <button className="btn text-light">Pesquisar</button>  
 
             </Form>
             </div> 
               <div className="pr-section col">
                   {Load === true ?
                     <>
-                     <span className="total">{Data.length} items founded on list </span>   
-                     <PaginatedItems Data={Data} itemsPerPage={9} /> 
+                    <div className="space">
+                      <div>
+                        <span className="total">{Data.length} moveis encomtrados na lista </span>  
+                      </div>
+                      <div>
+                           <Link to="/properties_map">
+                             <div className="link-box"><RiMapPin5Line /> ver no mapa</div>
+                           </Link>
+                      </div>
+                    </div>  
+                       <PaginatedItems Data={Data} itemsPerPage={9} />  
                     </>
                   :
                   <>
@@ -126,8 +157,14 @@ useEffect(()=>{
                     </div>
                   </>  
                   } 
-              </div>
+ 
+              </div> 
            </div>
+           
+           <div>  
+             <br />
+             <AddsBanner />
+          </div>
        </div>
        <br /><br />
     </div>
@@ -162,13 +199,17 @@ function Items({currentItems}){
     return (
       <>
         <Items currentItems={currentItems} />
-       <ReactPaginate 
-       nextLabel=">"
-       onPageChange={handlePageClick} 
-       pageCount={pageCount}
-       previousLabel="<"
-       breakLabel="..." 
-       renderOnZeroPageCount={null} />  
+        <div>
+        <div className="pagination">
+        <ReactPaginate 
+          nextLabel=">"
+          onPageChange={handlePageClick} 
+          pageCount={pageCount}
+          previousLabel="<"
+          breakLabel="..." 
+          renderOnZeroPageCount={null} />  
+        </div>
+        </div>
       </>
     );
   }

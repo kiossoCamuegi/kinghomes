@@ -11,8 +11,8 @@ function AboutHeader() {
        <div className="wrapper">
             <div className="block-text">
                <div>
-                  <h2>About Us</h2>
-                  <p>Real estate is land plus any property or resources on it. For millions of people, real estate — in the form of their homes — is the largest investment they will ever make, and the single most valuable asset they’ll ever own.</p>
+                  <h2>Sobre nós</h2>
+                  <p>Imóveis são terrenos mais quaisquer propriedades ou recursos nele contidos. Para milhões de pessoas, o imobiliário – sob a forma de casas – é o maior investimento que alguma vez farão e o bem mais valioso que alguma vez possuirão.</p>
                </div> 
             </div>
         </div>

@@ -8,7 +8,7 @@ function ContactForm() {
         <div className="ct-header">
             <div className="icon"><BiMessageSquareDetail/></div>
             <div className="text">
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit <strong>KingHomes</strong> eos praesentium nam vel modi.</span>
+                <span>Deseja fazer uma parceria, anuncio, ou agum tipo de reclamação <strong>KingHomes</strong> fale com a nossa equipe</span>
             </div>
         </div>
         <div className="form-content">
@@ -17,18 +17,18 @@ function ContactForm() {
 
                 </div>
                 <div className="d-flex">
-                    <div className='mt-4'><Form.Control placeholder='Your name ...' type='text' required /></div>
-                    <div className='mt-4'><Form.Control placeholder='Your email ...' type='email' required /></div>
+                    <div className='mt-4'><Form.Control placeholder='Seu nome ...' type='text' required /></div>
+                    <div className='mt-4'><Form.Control placeholder='Seu email ...' type='email' required /></div>
                 </div>
                 <div className="d-flex">
-                    <div className='mt-4'><Form.Control placeholder='Your phone ...' type='tel' required /></div>
-                    <div className='mt-4'><Form.Control placeholder='Your company ...' type='text' required /></div>
+                    <div className='mt-4'><Form.Control placeholder='Seu telefone ...' type='tel' required /></div>
+                    <div className='mt-4'><Form.Control placeholder='Sua Empresa ...' type='text' required /></div>
                 </div>
                 <Form.Group className="mb-3 mt-4" controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Message</Form.Label>
+                    <Form.Label>Mensagem</Form.Label>
                     <Form.Control placeholder='...' as="textarea" rows={9} />
                 </Form.Group>
-                <button className="btn text-light">Send</button>
+                <button className="btn text-light">Enviar</button>
             </Form>
         </div>
     </div>

@@ -7,10 +7,11 @@ import {BsArrowRight} from "react-icons/bs";
 function HomeBox({data, type}){
   return (
     <div className='home-box'>
+          <div className="sponsored">Patrocinado</div>
         <div className={`box ${type}`} >
-         <ImageLazyLoading source={data.src} height={540} />
-            <div className="over">
-                <h3>{data.title}</h3> 
+         <ImageLazyLoading source={data.src} height={540} /> 
+            <div className="over"> 
+               <Link to=""><h3>{data.title}</h3> </Link>
                 {type === "cm" ? <p>{data.location}</p> : <></>}
                 <div className="d-space">
                 <div className="d-flex f">
@@ -22,7 +23,7 @@ function HomeBox({data, type}){
                         <div className="st selected"><AiFillStar/></div>
                         <div className="st selected"><AiFillStar/></div>
                         <div className="st"><AiFillStar/></div>  
-                        <span>({data.visitors} visitors)</span>  
+                        <span> ({data.visitors} Visitantes)</span>  
                     </div>
                 </div>
                 <div className="vw">

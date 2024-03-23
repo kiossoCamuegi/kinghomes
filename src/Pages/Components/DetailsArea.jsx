@@ -72,11 +72,11 @@ function DetailsArea() {
        <div className="wrapper">
            <div className="content">
                <div className="p-box"> 
-                     <div className="price mb-2 mt-2">Price : <h4 className='text-success'>$ {Data.price}</h4></div>
+                     <div className="price mb-2 mt-2">Preço : <h4 className='text-success'>$ {Data.price}</h4></div>
                    <div className="title"><h1>{Data.title}</h1></div>
                    <div className="location"><MdOutlineLocationOn/> <h4>{Data.location}</h4></div>
-                   <div className='type'><MdOutlineBusiness/><h4>Type of business : {Data.type*1 === 0 ? "Sales" : "Rent"}</h4></div>
-                   <div className='type mt-2'><MdOutlineRemoveRedEye/><h4>{Data.visitors} people visited this page </h4></div>
+                   <div className='type'><MdOutlineBusiness/><h4>Tipo de imovel : {Data.type*1 === 0 ? "Comprar" : "Alugar"}</h4></div>
+                   <div className='type mt-2'><MdOutlineRemoveRedEye/><h4>{Data.visitors} pessoas visitaram esta pagina </h4></div>
                    <br />
                    <div className="video-area">
                      {Youtube !== null ? <>

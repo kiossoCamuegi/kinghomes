@@ -6,6 +6,7 @@ import ExploreProducts from './Components/ExploreProducts'
 import TestimonialsSection from './Components/TestimonialsSection'
 import Footer from './Components/Footer'
 import ImageLazyLoading from './Components/ImageLazyLoading'
+import AddsBanner from './Components/AddsBanner'
 
 function Home() {
   document.title = "KingHomes";
@@ -14,7 +15,7 @@ function Home() {
         <Navbar active={1} />
         <Header />
         <MostVisited /> 
-        <ExploreProducts />
+        <ExploreProducts /> 
         <TestimonialsSection />
         <Footer />
     </div>

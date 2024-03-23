@@ -29,9 +29,8 @@ function MostVisited() {
         </div>
         <div className="wrapper">
               <div className="text-block-area center">
-                  <h2>Our Most Amazing <br /> Visited Homes On 2023!</h2>
-                 <p>Lorem ipsum dolor sit,
-                 amet consectetur adipisicing elit. Iure beatae nisi error a eos ad ipsum voluptas deserunt pariatur dolore!</p>
+                  <h2>Espaços fabulosos <br /> Visitados recentemente em 2024!</h2>
+                 <p>Ta Querendo Comprar Barato? Compre Rápido, Sem Fiador E Livre De Burocracia. O Melhor Jeito De Comprar é aqui.</p>
               </div>
               <div className="content">
                   <div className="block bx">

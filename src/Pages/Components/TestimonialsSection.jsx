@@ -42,7 +42,7 @@ function TestimonialsSection() {
           <div className="center text-center">
           <div className="wrapper">
          <div className="text-block-area center">
-             <div> <h2>Let's Hear Their Experiences <br /> Using Our Plataform </h2></div> 
+             <div> <h2>Vamos ouvir suas experiências<br /> Usando nossa plataforma  </h2></div> 
             </div>
             <br />
             <section className="testimonials-carousel">

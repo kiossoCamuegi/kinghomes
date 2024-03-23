@@ -13,25 +13,23 @@ function Header() {
            <div className="ct">
            <div className="content">
             <section className='text'>
-                <h1>Stay Quietly, <br /> With No Worries<span className="txt">.</span> </h1>
+                <h1>Fique calmo, <br /> Sem preocupações<span className="txt">.</span> </h1>
                 <p>
-                    For those who seek an exceptional home and life, there is only KingHomes International Realty. 
-                  Built on centuries of tradition and dedicated to innovating the luxury real estate industry,
-                   KingHomes International Realty offers transformative experiences through a global network of exceptional agents.
+                Para quem busca uma casa e uma vida excepcionais, existe apenas a KingHomes International Realty. Construída com base em séculos de tradição e dedicada a inovar o setor imobiliário de luxo, a KingHomes International Realty oferece experiências transformadoras por meio de uma rede global de agentes excepcionais.   
                </p>
             </section>
             <section className='result-text'>
                   <div className="block">
                       <h2>12K+</h2>
-                      <span>Satisfied Visitors</span>
+                      <span>Visitantes mensais</span>
                   </div>
                   <div className="block">
                      <h2>4.5K+</h2>
-                     <span>Amazing Hotels</span>
+                     <span>Anúncios feitos</span>
                   </div>
                   <div className="block">
                       <h2>2K+</h2>
-                      <span>Website Requests</span>
+                      <span>Usúarios online</span>
                   </div>
             </section>
           </div>
