@@ -1,6 +1,6 @@
 
 function Hoot() {
-  return  "http://localhost:7000/"
+ return  "https://kinghomesserver.vercel.app/"
 }
 
 export default Hoot
