@@ -12,7 +12,7 @@ function LearnSection() {
                     <ImageLazyLoading  source="https://thumbs.web.sapo.io/?W=2100&H=0&delay_optim=1&epic=Zjdlxn6pDL11fp8E9qE5EvOTAsbGRqe3UdhHYMtfCZA3iWfUkiNxDUSDBSLLlMGxJALuL+TYL/iC+x4nl1V7h0w8JUV9XUTq5eOrIdGFr5v3WCg=" /> 
                 </div>      
                 <div className="text">
-                  <h1>Como anunciar  aqui<span className="txt-primary">?</span></h1>
+                  <h1>Deseja publicar um imovel <span className="txt-primary">?</span></h1>
                   <p>Obcaecati minima fugit sint tempora, praesentium excepturi eveniet suscipit, non nam deleniti, voluptatum odio impedit facilis. Amet ratione saepe voluptatum eum dolor est molestias id tenetur ut, eaque labore, porro suscipit eius, ducimus voluptatibus modi consequuntur <br /><br /> quod impedit natus expedita magni quisquam sint ea laudantium. Veritatis praesentium nobis exercitationem, doloremque dicta, architecto eos rem, quaerat eligendi eveniet dolorem nostrum qui itaque nam. Unde eaque placeat, magnam earum quod aliquam asperiores, sapiente perspiciatis doloremque eligendi corporis.</p>
                   <Link to="/post_something"><button className="btn">Anunciar agora</button> </Link>
                 </div>
