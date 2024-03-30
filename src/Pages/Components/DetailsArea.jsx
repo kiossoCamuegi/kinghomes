@@ -9,6 +9,7 @@ import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 import {MdOutlineBusiness,MdOutlineRemoveRedEye,MdOutlineLocationOn} from "react-icons/md";
 import Skeleton from '@mui/material/Skeleton';
 import GetImages from './GetImages';
+import AddsBanner from  "./AddsBanner";
 var getYouTubeID = require('get-youtube-id');
 
   
@@ -69,7 +70,7 @@ function DetailsArea() {
         <div className="images">
             <ImageGallery items={Images} />
         </div> 
-       <div className="wrapper">
+       <div className="wrapper"> 
            <div className="content">
                <div className="p-box"> 
                      <div className="price mb-2 mt-2">Preço : <h4 className='text-success'>$ {Data.price}</h4></div>
@@ -88,7 +89,9 @@ function DetailsArea() {
                     <section className="description">{parse(Text)}</section> 
                </div> 
            </div>
-           <br /><br />
+           <br />
+            <AddsBanner />
+           <br />
        </div>
       </aside> 
        :

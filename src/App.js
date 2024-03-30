@@ -51,7 +51,7 @@ function App() {
          <Circles
             height="140"
             width="140"
-            color="#9A3B3B"
+            color="#FF6D00"
             ariaLabel="circles-loading"
             wrapperStyle={{}}
             wrapperClass=""

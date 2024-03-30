@@ -143,7 +143,7 @@ useEffect(()=>{
                   :
                   <>
                   <div className="loading-area ">
-                    <Circles   height="140"  width="140"  color="#9A3B3B"  ariaLabel="circles-loading"
+                    <Circles   height="140"  width="140"  color="#FF6D00"  ariaLabel="circles-loading"
                     wrapperStyle={{}}  wrapperClass=""  visible={true}
                     />
                     </div>

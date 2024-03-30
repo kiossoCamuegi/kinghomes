@@ -15,6 +15,7 @@ import AddsBanner from './AddsBanner';
 import { TbCoinPound } from "react-icons/tb";
 import { RiMapPin5Line } from "react-icons/ri";
 import { BiCoin } from "react-icons/bi";
+import { BsBuildingAdd } from "react-icons/bs";
 
 
 function ProductsSearch() {      
@@ -122,6 +123,17 @@ useEffect(()=>{
                 </Form.Select>
             </div>
             <div className="block">
+                <Form.Label><div className="ed-flex"><BsBuildingAdd /><span> Categoria</span></div></Form.Label>
+                <Form.Select value={Type} onChange={(e)=>setType(e.target.value)} >
+                     <option value="0">Todos</option>
+                     <option value="1">Casa</option>
+                     <option value="2">Apartamento</option>
+                     <option value="3">Armazem</option>
+                     <option value="4">Terrenos e espaços</option>
+                     <option value="5">Escritorios</option> 
+                </Form.Select>
+            </div>
+            <div className="block">
                 <Form.Label><div className="ed-flex"><TbCoinPound /> <span>Preço</span></div></Form.Label>
                 <div className="d-flex">
                    <Form.Control placeholder='MIN' type="number" required onChange={(e)=>setLocation(e.target.value)}  />
@@ -151,7 +163,7 @@ useEffect(()=>{
                   :
                   <>
                   <div className="loading-area ">
-                    <Circles   height="140"  width="140"  color="#9A3B3B"  ariaLabel="circles-loading"
+                    <Circles   height="140"  width="140"  color="#FF6D00"  ariaLabel="circles-loading"
                     wrapperStyle={{}}  wrapperClass=""  visible={true}
                     />
                     </div>

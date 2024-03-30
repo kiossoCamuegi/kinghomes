@@ -19,12 +19,7 @@ function PrCard({data,length}) {
        <Link to={"/property_details/"+data.code} ><h4 className="title"><ReduceTextLength text={data.title} length={length} /></h4></Link>
         <div className="dets">
         <div className="space-box">
-        <div className="rv d-flex">
-            <div className="st selected"><AiFillStar/></div>
-            <div className="st selected"><AiFillStar/></div>
-            <div className="st selected"><AiFillStar/></div>
-            <div className="st selected"><AiFillStar/></div>
-            <div className="st"><AiFillStar/></div>  
+        <div className="rv d-flex"> 
             <span>({data.visitors} Visitantes)</span>  
         </div>
         <div className="price">$ {data.price}</div>

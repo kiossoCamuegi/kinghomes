@@ -77,8 +77,7 @@ function ExploreProducts() {
         <div className="wrapper">
           <div className="text-block-area space">
                  <div> 
-                    <h2>Explore os melhores <br />Imoveis !</h2>
-                    <img src="https://drive.usercontent.google.com/download?id=12HPkymSHvsYRsLOzmfmy-ueP_hiFSdDD&authuser=0" alt="" />
+                    <h2>Explore os melhores <br />Imoveis !</h2> 
                  </div>
                  <p>Quer comprar, vender ou alugar casa? No portal de Imobiliário temos milhares de apartamentos e moradias , aramazens, e qualquer tipo de imovel que pode imaginar.</p>
           </div>
@@ -97,7 +96,7 @@ function ExploreProducts() {
             <>
             <br />
             <div className="loading-area ">
-              <Circles   height="140"  width="140"  color="#9A3B3B"  ariaLabel="circles-loading"
+              <Circles   height="140"  width="140"  color="#FF6D00"  ariaLabel="circles-loading"
               wrapperStyle={{}}  wrapperClass=""  visible={true}
               />
               </div>

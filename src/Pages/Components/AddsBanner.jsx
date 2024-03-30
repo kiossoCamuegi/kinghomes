@@ -5,7 +5,7 @@ function AddsBanner() {
   return (
     <div className='adds-banner'>
        <a href="http://" target="_blank" rel="noopener noreferrer">
-          <ImageLazyLoading source="https://m.media-amazon.com/images/G/32/em/pd22/Onsite/associates/0073_PD22_LU_Associates_01_2148x588.jpg" />
+          <ImageLazyLoading source="https://www.unitel.st/img/slide/banner_bignet_site.png" />
        </a>
     </div>
   )
