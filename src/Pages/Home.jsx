@@ -21,6 +21,11 @@ function Home() {
         <LearnSection />
         <ExploreProducts /> 
         <TestimonialsSection />
+         <br />
+            <div className="wrapper">
+               <AddsBanner />
+            </div>
+           <br />
         <Footer />
     </div>
   )
